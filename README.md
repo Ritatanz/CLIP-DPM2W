@@ -1,2 +1,2 @@
 # CLIP-DPM2W
-Under reiview
+Under review
