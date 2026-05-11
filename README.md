@@ -57,7 +57,7 @@ Both benchmarks use **fixed and disjoint base/novel class splits** and are evalu
 **Original dataset:** TinyVIRAT-v2 is a multi-label action recognition dataset.
 
 **How we reconstruct it:**
-- We remove categories that do not contain enough samples for reliable **5-way 5-shot** episodic evaluation
+- We remove categories that do not contain enough samples for **5-way 5-shot** episodic evaluation
 
 **Removed categories**
 - `activity_running`
@@ -78,7 +78,7 @@ For both reconstructed benchmarks:
 
 - base and novel classes are **mutually exclusive**
 - the **meta-training split** contains only **base classes**
-- the **evaluation split** is defined over the **joint label space** of base and novel classes
+- the **meta-testing split** contains the **joint label space** of base and novel classes
 
 This means a test episode may contain:
 
@@ -106,10 +106,6 @@ Since this is a multi-label recognition task, we report:
 - **mAP-novel**: mean Average Precision over novel classes
 - **HM**: harmonic mean between base and novel performance
 
-\[
-HM = \frac{2 \times mAP_{base} \times mAP_{novel}}{mAP_{base} + mAP_{novel}}
-\]
-
 ---
 
 ## Dataset Downloads
@@ -119,14 +115,11 @@ HM = \frac{2 \times mAP_{base} \times mAP_{novel}}{mAP_{base} + mAP_{novel}}
 Please download the reconstructed datasets from the links below:
 
 #### SAV-MLFSAR
-- **Processed benchmark:** `<SAV_MLFSAR_DOWNLOAD_LINK>`
-- **Optional mirror:** `<SAV_MLFSAR_MIRROR_LINK>`
+- **Processed benchmark:** [(https://drive.google.com/drive/folders/1hXy9Sgql6gd27tVM8eXWVb-juBO-ATCs?usp=drive_link)]
 
 #### TinyVIRAT-v2-MLFSAR
 - **Processed benchmark:** `<TINYVIRAT_MLFSAR_DOWNLOAD_LINK>`
-- **Optional mirror:** `<TINYVIRAT_MLFSAR_MIRROR_LINK>`
 
-> Replace the placeholder links above with your actual download URLs.
 
 ---
 
@@ -134,15 +127,24 @@ Please download the reconstructed datasets from the links below:
 
 The fixed class splits used in our paper are provided in this repository:
 
+#### SAV-MLFSAR
+- **Train split:** [(https://drive.google.com/file/d/1GNefSS3XE7V02AzjhqkUFQQDzRrLlWSJ/view?usp=drive_link)]
+- **Test split:** [https://drive.google.com/file/d/1_kDhWIa40m1elPxijQX59gI2zDHrufxx/view?usp=drive_link]
+  
+#### TinyVIRAT-v2-MLFSAR
+- **Train split:** <>
+- **Test split:** <>
+
+
+### Directory Structure
+
 ```bash
 data_splits/
 ├── SAV/
-│   ├── base_classes.txt
-│   ├── novel_classes.txt
-│   ├── train_split.json
-│   └── test_split.json
+│   ├── train_few_shot.txt
+│   ├── test_few_shot.txt
+│   └── videos
 └── TinyVIRAT-v2/
-    ├── base_classes.txt
-    ├── novel_classes.txt
-    ├── train_split.json
-    └── test_split.json
+    ├── train_few_shot.txt
+    ├── test_few_shot.txt
+    └── videos
