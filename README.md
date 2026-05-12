@@ -115,10 +115,10 @@ Since this is a multi-label recognition task, we report:
 Please download the reconstructed datasets from the links below:
 
 #### SAV-MLFSAR
-- **Processed benchmark:** [(https://drive.google.com/drive/folders/1hXy9Sgql6gd27tVM8eXWVb-juBO-ATCs?usp=drive_link)]
+- **Processed benchmark:** [https://drive.google.com/drive/folders/1hXy9Sgql6gd27tVM8eXWVb-juBO-ATCs?usp=drive_link]
 
 #### TinyVIRAT-v2-MLFSAR
-- **Processed benchmark:** `<TINYVIRAT_MLFSAR_DOWNLOAD_LINK>`
+- **Processed benchmark:** [https://drive.google.com/drive/folders/1xtWuLupBUDCkusqOvoAQfNk7hsS60SeV?usp=drive_link]
 
 
 ---
@@ -128,12 +128,14 @@ Please download the reconstructed datasets from the links below:
 The fixed class splits used in our paper are provided in this repository:
 
 #### SAV-MLFSAR
-- **Train split:** [(https://drive.google.com/file/d/1GNefSS3XE7V02AzjhqkUFQQDzRrLlWSJ/view?usp=drive_link)]
+- **Train split:** [https://drive.google.com/file/d/1GNefSS3XE7V02AzjhqkUFQQDzRrLlWSJ/view?usp=drive_link]
 - **Test split:** [https://drive.google.com/file/d/1_kDhWIa40m1elPxijQX59gI2zDHrufxx/view?usp=drive_link]
+- **Class map:** [https://drive.google.com/file/d/1IV5njw1eSBu-Y6OivJiU9zRO9Hv1I4mF/view?usp=drive_link]
   
 #### TinyVIRAT-v2-MLFSAR
-- **Train split:** <>
-- **Test split:** <>
+- **Train split:** [https://drive.google.com/file/d/1UH4iiCwCp5JpyjinCUQ3S5KD-dPllJ0G/view?usp=drive_link]
+- **Test split:** [https://drive.google.com/file/d/1YTJsVpnhWGT2-iktqxXwhXQgNm3iZLOh/view?usp=drive_link]
+- **Class map:** [https://drive.google.com/file/d/1SZIPhL8FFdY4pCgEvNEFLHrMQFJa3ajl/view?usp=drive_link]
 
 
 ### Directory Structure
@@ -143,8 +145,8 @@ data_splits/
 ├── SAV/
 │   ├── train_few_shot.txt
 │   ├── test_few_shot.txt
-│   └── videos
+│   └── videos/
 └── TinyVIRAT-v2/
     ├── train_few_shot.txt
     ├── test_few_shot.txt
-    └── videos
+    └── videos/
