@@ -130,7 +130,7 @@ The fixed class splits used in our paper are provided in this repository:
 #### SAV-MLFSAR
 - **Train split:** [https://drive.google.com/file/d/1GNefSS3XE7V02AzjhqkUFQQDzRrLlWSJ/view?usp=drive_link]
 - **Test split:** [https://drive.google.com/file/d/1_kDhWIa40m1elPxijQX59gI2zDHrufxx/view?usp=drive_link]
-- **Class map:** [https://drive.google.com/file/d/1IV5njw1eSBu-Y6OivJiU9zRO9Hv1I4mF/view?usp=drive_link]
+- **Class map:** [https://drive.google.com/file/d/1GhsXMZkTWo1yfp9wC5ba_DnBmxLZbXpU/view?usp=drive_link]
   
 #### TinyVIRAT-v2-MLFSAR
 - **Train split:** [https://drive.google.com/file/d/1UH4iiCwCp5JpyjinCUQ3S5KD-dPllJ0G/view?usp=drive_link]
